@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>/ 우주 정거장 도면</title>
+
+	<style type="text/css">
+
+		@font-face {font-family: 'LeferiPoint-WhiteA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteA.woff')
+			format('woff'); font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'NEXON Lv1 Gothic OTF Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff'); font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'NEXON Lv1 Gothic OTF'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'MinSans-Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+		html, body { cursor: url('cursor.png'), auto;}
+		a, a:link { cursor: url('cursor2.png'), auto;}
+		a:hover, a:focus { cursor: url('cursor2.png'), auto;}
+		a:active {cursor: url('cursor2.png'), auto;}
+
+		body, h1, p, ul, h2, h3{margin: 0; padding: 0;}
+		.bg-black{background: #000000; position: fixed; width: 100%; height: 1500px; padding-top: 60px;}
+
+		.yellow{color: #E7FF00;}
+		.white{color: #ffffff;}
+
+		ul {list-style-type: none; margin: 0;padding: 0; width: 270px; background-color: #000000; height: 800px; position: fixed; overflow: auto; border-color: #E7FF00; border-width: 1px; border-style: solid;}
+		.nav-1{display: inline-block; width: 250px; text-align: center; height: 154px; line-height: 45px; color: #ffffff; text-decoration-line : none; background-color: #E7FF00; color: #000000; text-align: left; padding-left: 20px; padding-top: 20px; font-size: 23pt; font-family:'NEXON Lv1 Gothic OTF Light' ;}
+		.nav-2{text-align: center; color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px; padding-top: 20px; font-size: 20pt; font-family:'NEXON Lv1 Gothic OTF Light' ;}
+		.nav-3{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 104.5px}
+		.nav-4{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 140px;}
+		.nav-5{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 109.7px;}
+		.nav-6{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-left: 20px; padding-right: 20px; margin-bottom: 30px; border-color: #E7FF00; border-width: 1px; border-style: solid;}
+
+		a:hover{color: #000000; background-color: #E7FF00;}
+		.nav-line{height: 400px; padding-top: 20px; padding-left: 20px;}
+		
+		.row {width: 1300px; margin: auto; background-color: #000000; height: 800px; border-color: #E7FF00; border-width: 1px; border-style: solid; overflow: auto;}
+		.main {display: inline-block; padding-left:20.9%; padding-top: 15px;}
+		.sub{background-color: #E7FF00; padding-bottom: 10px;}
+
+		.con-1{display: flex; flex-wrap: wrap; gap: 20px 5%;}
+		.con-2{display: flex; flex-wrap: wrap; gap: 20px 0%;}
+		.child1{width: 35%;}
+		.child2{width: 60%;}
+		.child3{width: 40%;}
+		.child4{width: 55%;}
+		.child5{width: 30%;}
+
+		.opacity{opacity: 0.3;}
+		.opacity:hover{opacity: 1; transition: 0.3s;}
+
+		h1{color: #E7FF00; font-size: 20pt; font-family: 'NEXON Lv1 Gothic OTF Light';  z-index: 1; padding-top: 15px; padding-left: 30px; width: 1000px;}
+		.subtitle{color: #000000;}
+		
+		h2{color: #E7FF00;}
+		h3{color: #E7FF00;}
+		p{font-family: 'MinSans-Light'; font-size: 12pt;}
+		.left{padding-left: 50px;}
+
+		.top{position: relative; top: -28px; left: 30px; width: 970px;}
+		.floor{position: relative; left: -80px;}
+
+
+	</style>
+
+</head>
+<body>
+	<section class="bg-black">
+		<div class="row">
+			<ul>
+		  		<li><a class="nav-1" href="index.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">2137년<br>우주조난<br>가이드</a></li>
+		  		<p class="nav-2" style="font-family: 'NEXON Lv1 Gothic OTF Light';">Contents</p>
+		  		<img src="nav-line.png" class="nav-line">
+		  		<li><a class="nav-3" href="sub1.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 우주 정거장 도면</a></li>
+		  		<li><a class="nav-4" href="sub2.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 생존 매뉴얼</a></li>
+		  		<li><a class="nav-5" href="sub3.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 최초의 조난일지</a></li>
+			</ul>
+
+			<div class="main">
+				<div>
+		  			<h1 style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 우주 정거장 도면</h1>
+		  			<img src="top.png" class="top">
+		  		</div>
+		  		<div class="sub">
+		  			<h1 class="subtitle" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 전체 도면</h1>
+		  		</div>
+		  		<div class="con-1" style="margin-top: 40px;">
+		  			<div class="child1">
+		  				<p class="left yellow" style="padding-top: 130px; font-family: 'MinSans-Light';">
+		  					/ 출입 가능 구역
+		  				</p>
+		  				<p class="left white" style="padding-top: 10px; font-family: 'MinSans-Light';">
+		  					영화관, 우주정원, 의무실,
+		  				</p>
+		  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+		  					체력단련실, 조리실, 식량 저장소,
+		  				</p>
+		  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+		  					항공라운지, 우주호텔 비상연락실
+		  				</p>
+		  				<p class="left yellow" style="padding-top: 50px; font-family: 'MinSans-Light';">
+		  					/ 출입 가능 구역
+		  				</p>
+		  				<p class="left white" style="padding-top: 10px; font-family: 'MinSans-Light';">
+		  					산소공급실, 종교실, 에너지실
+		  				</p>
+		  			</div>
+		  			<div class="child2">
+		  				<img src="floor.svg" class="floor" height="330px" style="padding-top: 70px;">
+		  			</div>
+		  		</div>
+		  		<div class="sub" style="margin-top: 130px;">
+		  			<h1 class="subtitle" style="margin-top: 120px; font-family: 'NEXON Lv1 Gothic OTF Light';">/ 1F</h1>
+		  		</div>
+		  		<div class="con-2">
+		  			<div class="child4">
+		  				<img src="1f.png" class="left" style="width: 500px; padding-top: 100px;">
+		  			</div>
+		  			<div class="child3">
+		  				<p class="left yellow" style="padding-top: 130px; font-family: 'MinSans-Light';">
+		  					/ 출입 가능 구역
+		  				</p>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					영화관
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					실시간으로 영화가 업로드 되는 홀로그램 영화관입니다.
+				  				</p>
+				  			</div>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					우주정원
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					우주에서 유일하게 살아있는 식물을 볼 수 있는 곳입니다.
+				  				</p>
+				  			</div>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					의무실
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					인공지능 AI 의사가 진찰해주는 우주 병원입니다.
+				  				</p>
+				  			</div>
+		  				<p class="left yellow" style="padding-top: 70px; font-family: 'MinSans-Light';">
+		  					/ 출입 제한 구역
+		  				</p>
+		  					<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					산소공급실
+				  				</p>
+				  				<p class="left white" style="padding-top: 7px; font-family: 'MinSans-Light';">
+				  					당신의 생명을 책임져주는 공간입니다. 가끔씩 나오는<br>
+				  					보라색 연기는 인체에 절대 무해하니 안심하시고<br>
+				  					비상연락실로 가 지구 정거장 측에 알려주시기 바랍니다.<br>
+				  				</p>
+				  			</div>
+		  			</div>
+		  		</div>
+		  		<div class="sub" style="margin-top: 130px;">
+		  			<h1 class="subtitle" style="margin-top: 120px; font-family: 'NEXON Lv1 Gothic OTF Light';">/ 2F</h1>
+		  		</div>
+		  		<div class="con-2">
+		  			<div class="child4">
+		  				<img src="2f.png" class="left" style="width: 500px; padding-top: 100px;">
+		  			</div>
+		  			<div class="child3">
+		  				<p class="left yellow" style="padding-top: 130px; font-family: 'MinSans-Light';">
+		  					/ 출입 가능 구역
+		  				</p>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					체력단련실
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					다양한 운동기구가 있는 헬스 케어 센터입니다.
+				  				</p>
+				  			</div>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					조리실
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					기본적인 취식을 직접 해결할 수 있는 장소입니다.
+				  				</p>
+				  			</div>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					식량 저장소
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					약 3년 간 생존할 수 있는 음식이 있는 곳입니다.
+				  				</p>
+				  			</div>
+		  				<p class="left yellow" style="padding-top: 70px;">
+		  					/ 출입 제한 구역
+		  				</p>
+		  					<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					종교실
+				  				</p>
+				  				<p class="left white" style="padding-top: 7px; font-family: 'MinSans-Light';">
+				  					심란할 땐 숙소에서 기도 드리길 권장합니다.<br>
+				  					기도하는 중간 누군가 당신의 뒤에 서 있는 것 같아도<br>
+				  					절대로 눈을 뜨지 마십시오.<br>
+				  				</p>
+				  			</div>
+		  			</div>
+		  		</div>
+		  		<div class="sub" style="margin-top: 130px;">
+		  			<h1 class="subtitle" style="margin-top: 120px; font-family: 'NEXON Lv1 Gothic OTF Light';">/ 3F</h1>
+		  		</div>
+		  		<div class="con-2" style="padding-bottom: 120px;">
+		  			<div class="child4">
+		  				<img src="3f.png" class="left" style="width: 500px; padding-top: 100px;">
+		  			</div>
+		  			<div class="child3">
+		  				<p class="left yellow" style="padding-top: 130px; font-family: 'MinSans-Light';">
+		  					/ 출입 가능 구역
+		  				</p>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					항공라운지 
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					1년 뒤 도착할 우주선을 기다릴 수 있는 공간입니다.
+				  				</p>
+				  			</div>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					우주호텔
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					조난객이 기본적으로 머물 수 있도록 준비된 장소입니다.
+				  				</p>
+				  			</div>
+				  			<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					의무실
+				  				</p>
+				  				<p class="left white" style="padding-top: 5px; font-family: 'MinSans-Light';">
+				  					인공지능 AI 의사가 진찰해주는 우주 병원입니다.
+				  				</p>
+				  			</div>
+		  				<p class="left yellow" style="padding-top: 70px; font-family: 'MinSans-Light';">
+		  					/ 출입 제한 구역
+		  				</p>
+		  					<div class="opacity">
+				  				<p class="left yellow" style="padding-top: 20px; font-family: 'MinSans-Light';">
+				  					에너지실
+				  				</p>
+				  				<p class="left white" style="padding-top: 7px; font-family: 'MinSans-Light';">
+				  					에너지는 언제나 공급됩니다.<br>
+				  					정거장 전체 비상전력이이 끊겨도 에너지는 <br>
+				  					언제나 공급됩니다.<br>
+				  				</p>
+				  			</div>
+		  			</div>
+		  		</div>
+		  		<div style="padding-bottom: 30px; margin-left: 780px;">
+		  			<li><a class="nav-6" href="sub2.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 다음 가이드로 이동</a></li>
+		  		</div>
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>

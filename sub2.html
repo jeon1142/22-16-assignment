@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>/ 생존 매뉴얼</title>
+
+	<style type="text/css">
+
+		@font-face {font-family: 'LeferiPoint-WhiteA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteA.woff')
+			format('woff'); font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'NEXON Lv1 Gothic OTF Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff'); font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'NEXON Lv1 Gothic OTF'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'MinSans-Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+		html, body { cursor: url('cursor.png'), auto;}
+		a, a:link { cursor: url('cursor2.png'), auto;}
+		a:hover, a:focus { cursor: url('cursor2.png'), auto;}
+		a:active {cursor: url('cursor2.png'), auto;}
+
+		body, h1, p, ul, h2, h3{margin: 0; padding: 0;}
+		.bg-black{background: #000000; position: fixed; width: 100%; height: 1500px; padding-top: 60px;}
+
+		.yellow{color: #E7FF00;}
+		.white{color: #ffffff;}
+		.black{color: #000000;}
+
+		ul {list-style-type: none; margin: 0;padding: 0; width: 270px; background-color: #000000; height: 800px; position: fixed; overflow: auto; border-color: #E7FF00; border-width: 1px; border-style: solid;}
+		.nav-1{display: inline-block; width: 250px; text-align: center; height: 154px; line-height: 45px; color: #ffffff; text-decoration-line : none; background-color: #E7FF00; color: #000000; text-align: left; padding-left: 20px; padding-top: 20px; font-size: 23pt; font-family:'NEXON Lv1 Gothic OTF Light' ;}
+		.nav-2{text-align: center; color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px; padding-top: 20px; font-size: 20pt; font-family:'NEXON Lv1 Gothic OTF Light' ;}
+		.nav-3{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 104.5px}
+		.nav-4{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 140px;}
+		.nav-5{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 109.7px;}
+		.nav-6{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-left: 20px; padding-right: 20px; margin-bottom: 30px; border-color: #E7FF00; border-width: 1px; border-style: solid;}
+
+		a:hover{color: #000000; background-color: #E7FF00;}
+		.nav-line{height: 400px; padding-top: 20px; padding-left: 20px;}
+		
+		.row {width: 1300px; margin: auto; background-color: #000000; height: 800px; border-color: #E7FF00; border-width: 1px; border-style: solid; overflow: auto;}
+		.main {display: inline-block; padding-left:20.9%; padding-top: 15px;}
+		.sub{background-color: #E7FF00; padding-bottom: 10px;}
+
+
+		.opacity{opacity: 0.3;}
+		.opacity:hover{opacity: 1; transition: 0.3s;}
+
+		h1{font-size: 20pt; font-family: 'NEXON Lv1 Gothic OTF Light';  z-index: 1;}
+		.subtitle{color: #000000;}
+		
+		h2{font-size: 17pt; font-family: 'NEXON Lv1 Gothic OTF Light';}
+		h3{color: #E7FF00;}
+		p{font-family: 'MinSans-Light'; font-size: 12pt; margin-top: 7px;}
+		span{background-color: #000000;}
+		span:hover{background-color: #E7FF00; transition: 0.3s;}
+
+		.left{padding-left: 50px;}
+
+
+		.top{position: relative; top: -28px; left: 30px; width: 970px;}
+
+		input{display: none;}
+		.tab{display: inline-block;}
+		label{display: block; width: 220px; height: 50px; background: #000000; text-align: center; line-height: 50px; font-family:'NEXON Lv1 Gothic OTF'; color: #E7FF00; border-color: #E7FF00; border-width: 1px; border-style: solid; margin-left: 24px;}
+		label:hover{background-color: #E7FF00; color: #000000;}
+		.flex{display: flex;}
+		#r1:checked ~ #l1{background: #E7FF00; color: #000000;}
+		#r1:checked ~ #con1{display: block; background: #E7FF00; color: #000000;}
+		#r2:checked ~ #l2{background: #E7FF00; color: #000000;}
+		#r2:checked ~ #con2{display: block; background: #E7FF00; color: #000000;}
+		#r3:checked ~ #l3{background: #E7FF00; color: #000000;}
+		#r3:checked ~ #con3{display: block; background: #E7FF00; color: #000000;}
+		#r4:checked ~ #l4{background: #E7FF00; color: #000000;}
+		#r4:checked ~ #con4{display: block; background: #E7FF00; color: #000000;}
+		
+		.box{margin: auto; display: inline-block;}
+		.frame{height: 100%; background: #CCC; position: absolute; width: 975px; display: none; margin-top: 20px; margin-left: 24px;}
+
+		/*.con{width: 925px; margin-top: 30px; margin-left: 25px;}*/
+		.con{height: 750px; background: #CCC; position: width: 925px; display: none; margin-top: 30px; margin-left: 25px;}
+		
+		.con-1{display: flex; flex-wrap: wrap; gap: 20px 5%;}
+		.con-2{display: flex; flex-wrap: wrap; gap: 20px 5%;}
+		.child1{width: 35%;}
+		.child2{width: 60%;}
+		.child3{width: 40%;}
+		.child4{width: 55%;}
+		.child5{width: 30%;}
+		.child6{width: 25%;}
+
+		.img{width: 230px; padding-top: 50px; animation: rotate 30s linear infinite; }
+		/*.img:hover{transform: scale(1.1);}
+		.img{transition: all 0.2s linear;}*/
+			/*@keyframes rotate { from {transform: rotateY(0deg);} to {transform: rotateY(360deg);} }*/
+
+
+	</style>
+
+</head>
+<body>
+	<section class="bg-black">
+		<div class="row">
+			<ul>
+		  		<li><a class="nav-1" href="index.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">2137년<br>우주조난<br>가이드</a></li>
+		  		<p class="nav-2" style="margin: 0px; font-family: 'NEXON Lv1 Gothic OTF Light';">Contents</p>
+		  		<img src="nav-line.png" class="nav-line">
+		  		<li><a class="nav-3" href="sub1.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 우주 정거장 도면</a></li>
+		  		<li><a class="nav-4" href="sub2.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 생존 매뉴얼</a></li>
+		  		<li><a class="nav-5" href="sub3.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 최초의 조난일지</a></li>
+			</ul>
+
+			<div class="main">
+				<div>
+					
+				</div>
+				<div>
+		  			<h1 class="yellow" style="font-family: 'NEXON Lv1 Gothic OTF Light'; padding-top: 15px; padding-left: 30px;">/ 생존 매뉴얼</h1>
+		  			<img src="top.png" class="top">
+		  		</div>
+		  		<div class="black" style="margin: auto; width: 800px; height: 200px; border-color: #E7FF00; border-width: 1px; border-style: solid; margin-bottom: 60px;">
+		  			<p style="line-height: 25px; font-family: NEXON Lv1 Gothic OTF; text-align: center; margin-top: 80px; background-color: #E7FF00;">하단의 버튼을 클릭하여 생존을 위한 각종 매뉴얼을 숙지한 뒤,<br>조난 기간동안 해당 수칙을 필수적으로 지키시길 바랍니다.</p>
+		  		</div>
+		  		<div class="box">
+		  			<div style="margin-top: 50px;"></div>
+						<input type="radio" name="t" id="r1"> 
+						<input type="radio" name="t" id="r2">
+						<input type="radio" name="t" id="r3">
+						<input type="radio" name="t" id="r4">
+						<label for="r1" class="tab" id="l1">/ 지구에 도움요청</label>
+						<label for="r2" class="tab" id="l2">/ 식량 해결하기</label>
+						<label for="r3" class="tab" id="l3">/ 외로움 극복하기</label>
+						<label for="r4" class="tab" id="l4">/ 체력 보존하기</label>
+					<div class="con left" id="con1" style="padding-bottom: 50px;">
+						<div class="con-2" style="padding-top: 20px; padding-bottom: 20px;">
+							<div class="child1">
+								<h2 class="black" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 비상연락망 안내</p>
+							</div>
+							<div class="child6">
+								<img src="manual1-1.png" class="img">
+							</div>
+							<div class="child5">
+								<p class="black" style="font-family: 'MinSans-Light';">/ 1</p>
+								<p class="black" style="font-family: 'MinSans-Light';">지구 우주관제센터로 연결할 수 있는<br> 연락망입니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 2</p>
+								<p class="black" style="font-family: 'MinSans-Light';">3층 비상 연락실에 있는 전화기로,<br>'09-923-2379'에 연락하십시오.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 3</p>
+								<p class="black bg" style="font-family: 'MinSans-Light';"><span>이외의 번호로 잘못 연결했을 땐,<br>즉시 끊으십시오. 만약 누군가가 연락을<br>받을시, 아무 말도 하지마십시오.</span></p>
+							</div>
+						</div>
+						<div class="con-2" style="padding-top: 120px; padding-bottom: 50px;">
+							<div class="child1">
+								<h2 class="black" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 정기적인 생존 보고</p>
+							</div>
+							<div class="child6">
+								<img src="manual1-2.png" class="img">
+							</div>
+							<div class="child5">
+								<p class="black" style="font-family: 'MinSans-Light';">/ 1</p>
+								<p class="black" style="font-family: 'MinSans-Light';">매달 2, 4번째 토요일마다 당신의<br>생존보고를 전 세계에서 중계합니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 2</p>
+								<p class="black" style="font-family: 'MinSans-Light';">당신의 몸상태를 정확히 살피기 위해<br>기자의 질문에 철저히 답해주십시오.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 3</p>
+								<p class="black bg"><span>검은 선글라스와 파란색 만년피을 든<br>기자가 질문을 건낼 땐 시선을 피한 뒤<br>노코멘트로 응하십시오.</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="con left" id="con2" style="padding-bottom: 50px;">
+						<div class="con-2" style="padding-top: 20px; padding-bottom: 20px;">
+							<div class="child1">
+								<h2 class="black" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 식량 저장소</p>
+							</div>
+							<div class="child6">
+								<img src="manual2-1.png" class="img">
+							</div>
+							<div class="child5">
+								<p class="black" style="font-family: 'MinSans-Light';">/ 1</p>
+								<p class="black" style="font-family: 'MinSans-Light';">2층에 위치했으며, 채소·고기·<br>생선 등 지구에 있는 모든 식재료가<br> 존재하는 곳입니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 2</p>
+								<p class="black" style="font-family: 'MinSans-Light';">건조식량을 포함해, 총 3년치의 식량이<br>보관되어 있습니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 3</p>
+								<p class="black bg" style="font-family: 'MinSans-Light';"><span>식량 저장소 안에는 붉은색 음료팩이<br>존재하지 않습니다. 해당 음료를<br>발견할 시, 바로 폐기처리 하십시오.</span></p>
+							</div>
+						</div>
+						<div class="con-2" style="padding-top: 120px; padding-bottom: 50px;">
+							<div class="child1">
+								<h2 class="black" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 우주정원 내 텃밭</p>
+							</div>
+							<div class="child6">
+								<img src="manual2-2.png" class="img">
+							</div>
+							<div class="child5">
+								<p class="black" style="font-family: 'MinSans-Light';">/ 1</p>
+								<p class="black" style="font-family: 'MinSans-Light';">1층 우주정원 구석에 있는 텃밭을 통해<br> 신선한 재료를 구할 수 있습니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 2</p>
+								<p class="black" style="font-family: 'MinSans-Light';">텃밭 재배를 위한 농기구, 비료 등은<br>정원 동쪽의 창고에 보관되어 있습니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 3</p>
+								<p class="black bg" style="font-family: 'MinSans-Light';"><span>땅을 팔 때 검은 봉투, 혹은 길고 하얀<br> 막대기를 발견했다면 바로 흙으로 덮고<br>자리를 옮기십시오.</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="con left" id="con3" style="padding-bottom: 150px;">
+						<div class="con-2" style="padding-top: 20px; padding-bottom: 20px;">
+							<div class="child1">
+								<h2 class="black" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 로봇 동물</p>
+							</div>
+							<div class="child6">
+								<img src="manual3-1.png" class="img">
+							</div>
+							<div class="child5">
+								<p class="black" style="font-family: 'MinSans-Light';">/ 1</p>
+								<p class="black" style="font-family: 'MinSans-Light';">당신의 외로움을 달래줄 귀여운<br>로봇 친구들입니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 2</p>
+								<p class="black" style="font-family: 'MinSans-Light';">로봇 동물 훈련시키기, 밥 챙겨주기,<br>산책하기 등을 로봇솨 함께 할 수 있습니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 3</p>
+								<p class="black bg" style="font-family: 'MinSans-Light';"><span>로봇의 전원을 절대로 끄지 마십시오. <br>로봇이 고장나 말을 듣지 않는다면<br>망치로 부숴 폐시하시기 바랍니다.</span></p>
+							</div>
+						</div>
+						<div class="con-2" style="padding-top: 120px; padding-bottom: 50px;">
+							<div class="child1">
+								<h2 class="black" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 지구 관람 방법</p>
+							</div>
+							<div class="child6">
+								<img src="manual3-2.png" class="img">
+							</div>
+							<div class="child5">
+								<p class="black" style="font-family: 'MinSans-Light';">/ 1</p>
+								<p class="black" style="font-family: 'MinSans-Light';">실제 지구 상태를 반영해 실시간으로<br>변하는 홀로그램 지구를 확인하십시오.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 2</p>
+								<p class="black" style="font-family: 'MinSans-Light';"> 홀로그램 지구를 통해 자신이 살던<br>곳의 모습도 볼 수 있습니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 3</p>
+								<p class="black bg" style="font-family: 'MinSans-Light';"><span>지구의 푸른 영역은 언제나 일정합니다.<br>푸른 영역이 늘어난 것처럼 보이는 것은<br>당신의 착각입니다.</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="con left" id="con4" style="padding-bottom: 50px;">
+						<div class="con-2" style="padding-top: 20px; padding-bottom: 20px;">
+							<div class="child1">
+								<h2 class="black" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 체력 단련실</p>
+							</div>
+							<div class="child6">
+								<img src="manual4-1.png" class="img">
+							</div>
+							<div class="child5">
+								<p class="black" style="font-family: 'MinSans-Light';">/ 1</p>
+								<p class="black" style="font-family: 'MinSans-Light';">2층에 위치했으며 몸을 건강하게<br>유지할 수 있도록 준비된 공간입니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 2</p>
+								<p class="black" style="font-family: 'MinSans-Light';">지속적인 체력 측정을 통해 우주선이<br>도착할 때까지 체력을 보존하시길 바랍니다.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 3</p>
+								<p class="black bg" style="font-family: 'MinSans-Light';"><span>인바디 사용시 평소의 2배의 몸무게가<br>측정되어도 놀라지 마십시오. 기계가<br>고장난 것은 아니므로 그대로 두십시오.</span></p>
+							</div>
+						</div>
+						<div class="con-2" style="padding-top: 120px; padding-bottom: 50px;">
+							<div class="child1">
+								<h2 class="black" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 우주 산책</p>
+							</div>
+							<div class="child6">
+								<img src="manual4-2.png" class="img">
+							</div>
+							<div class="child5">
+								<p class="black" style="font-family: 'MinSans-Light';">/ 1</p>
+								<p class="black" style="font-family: 'MinSans-Light';">분위기 전환을 위해 가끔씩 정거장<br>밖으로 나가 산책하십시오.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 2</p>
+								<p class="black" style="font-family: 'MinSans-Light';">산책 나가기 전, 산소통에 공기가<br>충분히 담겨 있는지 확인하십시오.</p>
+								<br>
+								<p class="black" style="font-family: 'MinSans-Light';">/ 3</p>
+								<p class="black bg" style="font-family: 'MinSans-Light';"><span>31번 캐비닛의 우주복은 절대로 입지 <br>마십시오. 캐비닛 안에서 소리가 나도<br>절대 열지 마십시오.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="margin-top: 100px;"></div>
+				<div style="padding-top: 100px; margin-left: 790px; margin-bottom: 30px;">
+		  			
+		  			<li><a class="nav-6" href="sub3.html" style="font-family: 'NEXON Lv1 Gothic OTF Light';">/ 다음 가이드로 이동</a></li>
+		  		</div>
+		  	</div>
+		</div>
+</head>
+<body>
+
+</body>
+</html>

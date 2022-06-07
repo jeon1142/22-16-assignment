@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>/ 최초의 조난일지</title>
+
+	<style type="text/css">
+
+		@font-face {font-family: 'LeferiPoint-WhiteA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteA.woff')
+			format('woff'); font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'NEXON Lv1 Gothic OTF Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Light.woff') format('woff'); font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'NEXON Lv1 Gothic OTF'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');font-weight: normal; font-style: normal;}
+		@font-face {font-family: 'MinSans-Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/MinSans-Light.woff') format('woff'); font-weight: normal; font-style: normal;}
+
+		html, body { cursor: url('cursor.png'), auto;}
+		a, a:link { cursor: url('cursor2.png'), auto;}
+		a:hover, a:focus { cursor: url('cursor2.png'), auto;}
+		a:active {cursor: url('cursor2.png'), auto;}
+
+		body, h1, p, ul, h2, h3{margin: 0; padding: 0;}
+		.bg-black{background: #000000; position: fixed; width: 100%; height: 1500px; padding-top: 60px;}
+		
+		.yellow{color: #E7FF00;}
+		.white{color: #ffffff;}
+		.black{color: #000000;}
+
+		ul {list-style-type: none; margin: 0;padding: 0; width: 270px; background-color: #000000; height: 800px; position: fixed; overflow: auto; border-color: #E7FF00; border-width: 1px; border-style: solid;}
+		.nav-1{display: inline-block; width: 250px; text-align: center; height: 154px; line-height: 45px; color: #ffffff; text-decoration-line : none; background-color: #E7FF00; color: #000000; text-align: left; padding-left: 20px; padding-top: 20px; font-size: 23pt; font-family:'NEXON Lv1 Gothic OTF Light' ;}
+		.nav-2{text-align: center; color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px; padding-top: 20px; font-size: 20pt; font-family:'NEXON Lv1 Gothic OTF Light' ;}
+		.nav-3{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 121.5px;}
+		.nav-4{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 157px;}
+		.nav-5{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; padding-left: 20px;font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-right: 126.7px;}
+		.nav-6{width: 250px; text-align: center; height: 70px; line-height: 50px;  color: #ffffff; text-decoration-line : none; background-color: #000000; color: #E7FF00; text-align: left; font-size: 12pt; font-family:'NEXON Lv1 Gothic OTF Light'; padding-top: 16px; padding-bottom: 16px; padding-left: 20px; padding-right: 20px; margin-bottom: 30px; border-color: #E7FF00; border-width: 1px; border-style: solid;}
+
+		.nav-3:hover{color: #000000; background-color: #E7FF00;}
+		.nav-4:hover{color: #000000; background-color: #E7FF00;}
+		.nav-5:hover{color: #000000; background-color: #E7FF00;}
+		.nav-6:hover{color: #000000; background-color: #E7FF00;}
+
+		.nav-line{height: 400px; padding-top: 20px; padding-left: 20px;}
+		
+		.row {width: 1300px; margin: auto; background-color: #000000; height: 800px; border-color: #E7FF00; border-width: 1px; border-style: solid; overflow: auto;}
+		.main {height:3000px; display: inline-block; padding-left:20.9%; padding-top: 15px;}
+		.sub{background-color: #E7FF00; padding-bottom: 10px; overflow: hidder;}
+
+
+		.opacity{opacity: 0.3;}
+		.opacity:hover{opacity: 1; transition: 0.3s;}
+
+		h1{color: #000000; font-size: 20pt; font-family: 'NEXON Lv1 Gothic OTF Light';  z-index: 1; padding-top: 15px; padding-left: 30px; width: 1000px;}
+		.subtitle{color: #000000;}
+		
+		h2{color: #000000; font-family: 'NEXON Lv1 Gothic OTF Light'; margin-top: 15px; margin-left: 15px;}
+		h3{color: #E7FF00;}
+		p{font-family: 'MinSans-Light'; font-size: 12pt; margin-left: 15px; line-height: 25px; color: #000000;}
+		span{background-color: #E7FF00;}
+
+		.left{padding-left: 60px;}
+
+		.top{position: relative; top: -28px; left: 30px; width: 970px;}
+
+		.con-1{display: flex; flex-wrap: wrap; gap: 20px 5%;}
+		.con-2{display: flex; flex-wrap: wrap; gap: 20px 0%;}
+		.child1{width: 45%; background-color: #000000; border-color: #E7FF00; border-width: 1px; border-style: solid; height: 600px; margin-top: 10px;}
+		.child2{width: 60%;}
+		.child3{width: 40%;}
+		.child4{width: 55%;}
+		.child5{width: 30%;}
+		.child6{width: 25%;}
+
+		.diary1{animation: shake1 10s; animation-iteration-count: infinite;}
+		@keyframes shake1{0%{transform: translate(1px, 1px) rotate(0deg);} 10%{ transform: translate(-1px, -2px) rotate(-1deg); } 20%{transform: translate(-3px, 0px) rotate(1deg);} 30%{transform: translate(3px, 2px) rotate(0deg);} 40%{transform: translate(1px, -1px) rotate(1deg); } 50%{transform: translate(-1px, 2px) rotate(-1deg);} 60%{transform: translate(-3px, 1px) rotate(0deg);} 70% {transform: translate(3px, 1px) rotate(-1deg);} 80% {transform: translate(-1px, -1px) rotate(1deg); } 90%{transform: translate(1px, 2px) rotate(0deg);} 100%{transform: translate(1px, -2px) rotate(-1deg);}}
+		.diary2{animation: shake2 2s; animation-iteration-count: infinite;}
+		@keyframes shake2{0%{transform: translate(1px, 1px) rotate(0deg);} 10%{ transform: translate(-1px, -2px) rotate(-1deg); } 20%{transform: translate(-3px, 0px) rotate(1deg);} 30%{transform: translate(3px, 2px) rotate(0deg);} 40%{transform: translate(1px, -1px) rotate(1deg); } 50%{transform: translate(-1px, 2px) rotate(-1deg);} 60%{transform: translate(-3px, 1px) rotate(0deg);} 70% {transform: translate(3px, 1px) rotate(-1deg);} 80% {transform: translate(-1px, -1px) rotate(1deg); } 90%{transform: translate(1px, 2px) rotate(0deg);} 100%{transform: translate(1px, -2px) rotate(-1deg);}}
+		.diary3{animation: shake3 0.5s; animation-iteration-count: infinite;}
+		@keyframes shake3{0%{transform: translate(1px, 1px) rotate(0deg);} 10%{ transform: translate(-1px, -2px) rotate(-1deg); } 20%{transform: translate(-3px, 0px) rotate(1deg);} 30%{transform: translate(3px, 2px) rotate(0deg);} 40%{transform: translate(1px, -1px) rotate(1deg); } 50%{transform: translate(-1px, 2px) rotate(-1deg);} 60%{transform: translate(-3px, 1px) rotate(0deg);} 70% {transform: translate(3px, 1px) rotate(-1deg);} 80% {transform: translate(-1px, -1px) rotate(1deg); } 90%{transform: translate(1px, 2px) rotate(0deg);} 100%{transform: translate(1px, -2px) rotate(-1deg);}}
+		.diary4{animation: shake4 0.2s; animation-iteration-count: infinite;}
+		@keyframes shake4{0%{transform: translate(1px, 1px) rotate(0deg);} 10%{ transform: translate(-2px, -3px) rotate(-1deg); } 20%{transform: translate(-5px, 0px) rotate(1deg);} 30%{transform: translate(4px, 3px) rotate(0deg);} 40%{transform: translate(1px, -1px) rotate(1deg); } 50%{transform: translate(-2px, 3px) rotate(-1deg);} 60%{transform: translate(-3px, 1px) rotate(0deg);} 70% {transform: translate(3px, 1px) rotate(-1deg);} 80% {transform: translate(-1px, -1px) rotate(1deg); } 90%{transform: translate(1px, 2px) rotate(0deg);} 100%{transform: translate(1px, -2px) rotate(-1deg);}}
+		.diary5{animation: shake5 0.08s; animation-iteration-count: infinite;}
+		@keyframes shake5{0%{transform: translate(5px, 5px) rotate(3deg);} 10%{ transform: translate(-2px, -3px) rotate(-3deg); } 20%{transform: translate(-5px, 0px) rotate(1deg);} 30%{transform: translate(4px, 3px) rotate(0deg);} 40%{transform: translate(1px, -1px) rotate(2deg); } 50%{transform: translate(-2px, 3px) rotate(-1deg);} 60%{transform: translate(-3px, 1px) rotate(-1deg);} 70% {transform: translate(3px, 10px) rotate(-3deg);} 80% {transform: translate(-1px, -1px) rotate(3deg); } 90%{transform: translate(5px, 5px) rotate(0deg);} 100%{transform: translate(1px, -2px) rotate(-1deg);}}
+		.diary6{animation: shake6 0.1s; animation-iteration-count: infinite;}
+		@keyframes shake6{0%{transform: translate(10px, 10px) rotate(6deg);} 10%{ transform: translate(-8px, -6px) rotate(-6deg); } 20%{transform: translate(-10px, 0px) rotate(5deg);} 30%{transform: translate(4px, 3px) rotate(0deg);} 40%{transform: translate(1px, -1px) rotate(2deg); } 50%{transform: translate(-6px, 9px) rotate(-5deg);} 60%{transform: translate(3px, -2px) rotate(6deg);} 70% {transform: translate(-6px, 10px) rotate(-9deg);} 80% {transform: translate(6px, -5px) rotate(6deg); } 90%{transform: translate(5px, 5px) rotate(0deg);} 100%{transform: translate(10px, -8px) rotate(-5deg);}}
+	</style>
+
+</head>
+<body>
+	<section class="bg-black">
+		<div class="row">
+			<ul style="z-index: 10;">
+		  		<li><a class="nav-1" href="index.html" style="font-family:'NEXON Lv1 Gothic OTF Light' ;">2137년<br>우주조난<br>가이드</a></li>
+		  		<p class="nav-2" style="margin: 0px; line-height: 30px; font-family:'NEXON Lv1 Gothic OTF Light' ;">Contents</p>
+		  		<img src="nav-line.png" class="nav-line">
+		  		<li><a class="nav-3" href="sub1.html" style="font-family:'NEXON Lv1 Gothic OTF Light' ;">/ 우주 정거장 도면</a></li>
+		  		<li><a class="nav-4" href="sub2.html" style="font-family:'NEXON Lv1 Gothic OTF Light' ;">/ 생존 매뉴얼</a></li>
+		  		<li><a class="nav-5" href="sub3.html" style="font-family:'NEXON Lv1 Gothic OTF Light' ;">/ 최초의 조난일지</a></li>
+			</ul>
+
+			<div class="main">
+				<div>
+		  			<h1 style="font-family:'NEXON Lv1 Gothic OTF Light'; color: #E7FF00;">/ 최초의 조난일지</h1>
+		  			<img src="top.png" class="top">
+		  		</div>
+		  		<section style="background-color: #E7FF00; padding-bottom: 100px; padding-top: 170px; overflow: hidden;">
+		  			<div style="margin:  auto; background-color: #000000; width: 800px; height: 250px; margin-bottom: 200px; text-align: center;">
+		  				<h2 style="margin-bottom: 20px; padding-top: 70px;"><span>/ 주의</span></h2>
+		  				<p style="font-family: 'MinSans-Light';"><span>이 페이지는 조난자의 주관적인 경험을 바탕으로 기록되어 있으며,<br>해당 가이드를 어겼을 시 나타나는 상황을 상세히 서술하였으니 시청시 주의하시기 바랍니다.</span></p>
+		  			</div>
+		  			<div style="margin-top: 500px;">
+		  				<h1 class="left" style="font-family:'NEXON Lv1 Gothic OTF Light' ;">/ 2086년 6월 14일</h1>
+		  			</div>
+		  			<div class="con-2 left">
+		  				<div class="child1">
+		  					<img src="diary1.png" style="width: 450px; padding-top: 20px;">	
+		  				</div>
+		  				<div div class="child1">
+		  					<h2 style="font-family:'NEXON Lv1 Gothic OTF Light' ;"><span>/오늘의 일기</span></h2>
+		  					<p style="color: #000000; margin-top: 55px; font-family: 'MinSans-Light';"><span>/ 1</span>
+		  						<p style="color: #E7FF00; margin-top: 15px;">성인이 된 기념으로 홀로 우주 여행을 갔다가 졸지에<br>우주미아가 되어버렸다. 미아가 된 이유는 터무니 없다. 너무<br>피곤한 탓에 우주 공항 라운지에서 깜빡 잠이 들었다가<br>제 시간에 일어나지 못하였고, 결국 지구로 가는 우주선을 제 때<br>탑승하지 못하였다.<br><br>우주선은 1년에 한 번씩 오는데···. <br>난 아마 세상에서 가장 멍청한 우주미아일 것이다.<br><br>그래도 곳곳에 배치된 비상전화를 통해 지구 우주관제센터와<br>대화해보니 이런 문제가 일어날 것에 대비하여 우주공항에<br>최소 3년간 숙식 생활이 가능하도록 시스템을 설계 해두었다고<br>한다. 통화 이후 공항 곳곳을 확인해보니 각종 식료품과<br>생필품, 그리고 숙식시설을 발견할 수 있었다.<br><br>나름 나쁜 생활은 아닐 것 같다. <br>1년동안 휴가 보낸다고 생각해보지 뭐.<br></p>
+		  					<img src="happy1.png" style="position: relative; bottom: 50px; right: 400px; width: 70px; transform: rotate(45deg);" class="diary1">
+		  					<img src="happy2.png" style="position: relative; left: 200px; top: 300px; width: 120px; transform: rotate(-45deg);" class="diary1">
+		  				</div>
+		  			</div>
+		  			<div style="margin-top: 700px;">
+		  				<h1 class="left" style="margin-top: 100px; font-family:'NEXON Lv1 Gothic OTF Light' ;">/ 2086년 8월 30일</h1>
+		  			</div>
+		  			<div class="con-2 left">
+		  				<div class="child1">
+		  					<img src="diary2.png" style="width: 450px; padding-top: 20px;">	
+		  				</div>
+		  				<div div class="child1">
+		  					<h2><span style="font-family:'NEXON Lv1 Gothic OTF Light' ;">/오늘의 일기</span></h2>
+		  					<p style="color: #000000; margin-top: 55px; font-family: 'MinSans-Light';"><span>/ 74</span>
+		  						<p style="color: #E7FF00; margin-top: 15px;">우주미아가 된 지 두 달하고도 약 2주가 지났다.<br>난 슬슬 이 곳 환경에 적응했다. 매일매일 반복되는 하루가<br>지루할 법도 하지만 온전히 혼자서 즐기는 자유시간은<br>흔치 않으니 이 상황에 나름 만족 중이다. 그래도 2~3일 단위로<br>지구에서 연락이 오는데, 나는 이 시간이 가장 기다려진다.<br>무료한 삶에 생기는 변수는 언제나 즐겁기 마련이다.<br><br>수화기 너머 여행사 직원은 지금 내가 지구에서 최고<br>유명인사라고 알려주었다. 하긴, 세계 최초 우주 미아인데 <br>심이 없는게 더 이상할 것 같다.<br><br>오늘 같이 변수가 없는 날은 정말 지루한데 조난 가이드까지<br>지키려니까 살짝 미칠 것 같다. 뭐가 그리 중요하길래<br>조난 가이드를 이렇게나 강조하는거지?<br><br>한 번 정도는 어겨도 괜찮지 않을까?<br></p>
+		  					<img src="happy1.png" style="position: relative; bottom: 650px; right: 150px; width: 70px; transform: rotate(150deg);" class="diary2">
+		  					<img src="smile2.png" style="position: relative; top: 0px; right: 360px; width: 120px; transform: rotate(-15deg);" class="diary1">
+		  					<img src="smile1.png" style="position: relative; top: 330px; right: 60px; width: 60px; transform: rotate(60deg);" class="diary2">
+		  				</div>
+		  			</div>
+		  			<div style="padding-top: 700px;">
+		  				<h1 class="left" style="font-family:'NEXON Lv1 Gothic OTF Light' ;">/ 2086년 12월 9일</h1>
+		  			</div>
+		  			<div class="con-2 left">
+		  				<div class="child1">
+		  					<img src="diary3.png" style="width: 450px; padding-top: 20px;">	
+		  				</div>
+		  				<div div class="child1">
+		  					<h2 style="font-family:'NEXON Lv1 Gothic OTF Light' ;"><span>/오늘의 일기</span></h2>
+		  					<p style="color: #000000; margin-top: 55px; font-family: 'MinSans-Light';"><span>/ 17**5$</span>
+		  						<p style="color: #E7FF00; margin-top: 15px;">자꾸만 정신이 나갈 것 같다. 가끔씩 내가 현실에 있는건지<br>헷갈리곤 한다. 이럴 때일수록 더 열심히 일기를 써야<br>한다···. 기억은 쉽게 왜곡되더라고 기록은 매일매일 똑같은<br>형상으로 유지되니까···.<br><br>로봇 동물이랑 놀면서 힐링이나 해야 될 것 같다.<br>요즘엔 지구에서 오는 연락도 뜸해져서 고양이 로봇이랑<br>노는게 인생의 낙이다. 이 고양이 로봇랑 지내다 보면<br>우리 집에 있는 꼬미가 떠오른다. 꼬미도 잘 지내고 있겠지?<br><br>그나저나 이 고양이 로봇도 점점 망가지고 있는 것 같다.<br>벌써 몇번째 고장이지? 뭔가 로봇이 고장나는 주기가<br>점점 빨라지는 것처럼 느껴진다.<br><br>부수기는 아까우니 전원을 꺼서 호텔 구석에 놔둬야겠다.<br>잘 자 로봇 꼬미.<br></p>
+		  					<img src="smile2.png" style="position: relative; bottom: 650px; left: 300px; width: 80px; transform: rotate(180deg);" class="diary3">
+		  					<img src="no1.png" style="position: relative; bottom: 170px; right: 630px; width: 150px; transform: rotate(75deg);" class="diary2">
+		  					<img src="no2.png" style="position: relative; bottom: 20px; right: 500px; width: 100px; transform: rotate(-15deg);" class="diary3">
+		  					<img src="sad2.png" style="position: relative; top: 200px; left: 300px; width: 280px; transform: rotate(10deg);" class="diary3">
+		  				</div>
+		  			</div>
+		  			<div style="margin-top: 850px;">
+		  				<h1 class="left" style="font-family:'NEXON Lv1 Gothic OTF Light' ;">/ 2087년 3월 27일</h1>
+		  			</div>
+		  			<div class="con-2 left">
+		  				<div class="child1">
+		  					<img src="diary4.png" style="width: 450px; padding-top: 20px;">	
+		  				</div>
+		  				<div div class="child1">
+		  					<h2 style="font-family:'NEXON Lv1 Gothic OTF Light' ;"><span>/오늘의 일기</span></h2>
+		  					<p style="color: #000000; margin-top: 55px; font-family: 'MinSans-Light';"><span>/ 2>??**>????83</span>
+		  						<p style="color: #E7FF00; margin-top: 15px;">집에 가고 싶다.<br>제 정신이 아니다.<br>코피가 몇 번 났는지 모르겠고<br>시간이 얼마나 흐른지 모르겠다.<br>그저 집에 가고싶다.<br><br>어디서부터 잘못된걸까.<br>빨리 집에 가고 싶어.<br>우주선은 대체 어디쯤인거야.<br><br>자꾸만 시선이 느껴진다.<br>그치만 이곳은 나 혼자 뿐이다.<br><br>우주선이 언제쯤 올까.<br>비상 탈출선이라도 쓸까.<br><br>빨리 집에 가고싶다.<br></p>
+		  					<img src="bad1.png" style="position: relative; bottom: 650px; right: 320px; width: 180px; transform: rotate(-15deg);" class="diary4">
+		  					<img src="sad1.png" style="position: relative; bottom: 300px; right: 100px; width: 220px; transform: rotate(50deg);" class="diary3">
+		  					<img src="bad2.png" style="position: relative; bottom: 250px; right: 300px; width: 320px; transform: rotate(-110deg);" class="diary4">
+		  				</div>
+		  			</div>
+		  			<div style="margin-top: 900px;">
+		  				<h1 class="left" style="font-family:'NEXON Lv1 Gothic OTF Light' ;">/ 2086년 6월 14일</h1>
+		  			</div>
+		  			<div class="con-2 left">
+		  				<div class="child1">
+		  					<img src="diary5.png" style="width: 450px; padding-top: 20px;">	
+		  				</div>
+		  				<div div class="child1">
+		  					<h2 style="font-family:'NEXON Lv1 Gothic OTF Light' ;"><span>/오늘의 일기</span></h2>
+		  					<p style="color: #000000; margin-top: 55px; font-family: 'MinSans-Light';"><span>/ 3????#$^#6>??%****////@%??5@&^(;’’**</span>
+		  						<p style="color: #E7FF00; margin-top: 15px;">지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다. 지구에<br>가야한다. 지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br>지구에 가야한다. 지구에 가야한다. 지구에 가야한다.<br></p>
+		  					<img src="sad2.png" style="position: relative; bottom: 1000px; right: 20px; width: 500px; transform: rotate(200deg);" class="diary6">
+		  					<img src="bad2.png" style="position: relative; bottom: 600px; right: 150px; width: 350px; transform: rotate(15deg);" class="diary6">
+		  					<img src="die1.png" style="position: relative; bottom: 1250px; left: 100px; width: 600px; transform: rotate(-95deg);" class="diary5">
+		  					<img src="sad1.png" style="position: relative; bottom: 1700px; right: 500px; width: 500px; transform: rotate(0deg);" class="diary5">
+		  					<img src="x1.png" style="position: relative; bottom: 2400px; right: 100px; width: 200px; transform: rotate(0deg);" class="diary6">
+		  					<img src="x2.png" style="position: relative; bottom: 2750px; right: 800px; width: 600px; transform: rotate(180deg);" class="diary5">
+		  					<img src="die2.png" style="position: relative; bottom: 2850px; right: 600px; width: 270px; transform: rotate(30deg);" class="diary6">
+		  				</div>
+		  			</div>
+		  		</section>
+		  	</div>
+		</div>
+</head>
+<body>
+
+</body>
+</html>
